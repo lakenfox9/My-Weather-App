@@ -15,21 +15,32 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Ozark</h1>
-          <p>
-            Monday 16:28, scatttered clouds
-            <br />
-            Humidity: 67%, Wind: 25km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Ozark</h1>
+            <p class="weather-app-details">
+              Monday 16:28, scatttered clouds
+              <br />
+              Humidity:<strong> 67%</strong>, Wind:<strong> 25km/h </strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather=app-temp-value">72</div>
+            <div class="weather-app-unit">&deg;F</div>
+          </div>
         </div>
-        <div>🌤️ 72 &deg;F</div>
       </main>
 
       <footer>
